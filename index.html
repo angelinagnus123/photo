@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - Easy Tutorials</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="flo.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+ <div class="img-gallery">
+    <div class="slider-wrapper">
+    <img src="flo.jpeg" alt="flo.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo1.jpeg" alt="flo1.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo2.jpeg" alt="flo2.jpeg"  class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo3.jpeg" alt= "flo3.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    
+    <img src="flo5.jpeg" alt="flo5.jpeg"c lass="image-item" onclick="openFullImg(this.src)">
+    <img src="flo6.jpeg" alt="flo6.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo7.jpeg" alt="flo7.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo8.jpeg" alt="flo8.jpeg" class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo9.jpeg" alt="flo9.jpeg"  class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo10.jpg" alt="flo10.jpg"  class="image-item" onclick="openFullImg(this.src)">
+    <img src="flo11.jpeg" alt="flo11.jpeg"  class="image-item" onclick="openFullImg(this.src)">
+    
+ </div>
+ </div>
+ <script>
+
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+    function openFullImg(pic){
+    fullImgBox.style.display="flex";
+    fullImg.src=pic;
+    }
+    function closeFullImg(){
+    fullImgBox.style.display="none";
+    }
+ </script>
+
+
+
+
+</body>
+</html>
